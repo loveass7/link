@@ -84,9 +84,7 @@ p{
 
 <div class="card">
 
-<img class="avatar"
-src="https://i.pravatar.cc/200"
-alt="Profile">
+<img id="profile" class="avatar" src="" alt="Profile">
 
 <h1>Ai Created</h1>
 
@@ -107,6 +105,31 @@ J
 <a class="link" href="https://photos.app.goo.gl/KBRu6X4KdoBDVq7m7" target="_blank">
 MB
 </a>
+
+    <script>
+const photos = [
+    "photo1.jpg",
+    "photo2.jpg",
+    "photo3.jpg",
+    "photo4.jpg",
+    "photo5.jpg",
+    "photo6.jpg",
+    "photo7.jpg",
+    "photo8.jpg",
+    "photo9.jpg",
+    "photo10.jpg",
+    "photo11.jpg",
+    "photo12.jpg",
+    "photo13.jpg",
+    "photo14.jpg",
+    "photo15.jpg",
+    "photo16.jpg"
+];
+
+const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
+
+document.getElementById("profile").src = randomPhoto;
+</script>
 
 <div class="footer">
 Made 4 pics
